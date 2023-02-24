@@ -20,9 +20,12 @@ public class ForgottenPassword {
 		@FindBy (xpath = "//button[@type='submit']")
 		private WebElement search;
 
-		@FindBy (xpath = "(//a[@role='button']) [1] ")
-		private WebElement cancel;
+		//@FindBy (xpath = "(//a[@role='button']) [1] ")
+		//private WebElement cancel;
 
+	        @FindBy (xpath = "(//a[@role='button12345']) [1] ")
+		private WebElement cancel;
+	
 		//Constructor : Initializaltion of WebElement : Login Or Sing Up Page
 		
 		public ForgottenPassword (WebDriver driver) {
